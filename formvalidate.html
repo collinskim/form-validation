@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="bootstrap.theme.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="">
+<div class="container" style="background-color: red;">
+	<div class="row">
+	<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<form name="myForm" style=" margin-top: 50px; margin-bottom: 50px;">
+			<p>fName:
+				<input type="email" name="fName" ng-model="fName" class="form-control" required>
+				<span ng-show="myForm.fName.$touched && myForm.fName.$invalid">Your first name is required.</span>
+			</p>
+				<br>
+			<p>lName:
+				<input name="lName" ng-model="lName" class="form-control" required>
+				<span ng-show="myForm.lName.$touched && myForm.lName.$invalid">Your last name is required.</span>
+			</p>
+
+			</form>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+</body>
+</html>
